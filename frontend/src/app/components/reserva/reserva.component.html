@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-5 offset-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">{{titulo | uppercase}}</span>
+                    <form class="mt-4" [formGroup]="reservaForm" (ngSubmit)="agregarReserva()">
+                        <div class="mb-3">
+                            <select class="form-control" >
+                                <option value="">-Seleccione un restaurante-</option>
+                                <option value="opcion1">Gourmet Fusión - Lince</option>
+                                <option value="opcion2">Gourmet Fusión - Chorrillos</option>
+                                <option value="opcion3">Gourmet Fusión - San Isidro</option>
+                              </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="fecha" class="form-control form-control-lg" placeholder="Fecha">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="hora" class="form-control form-control-lg" placeholder="Hora">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="cantidad" class="form-control form-control-lg" placeholder="Cantidad">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="estado" class="form-control form-control-lg" placeholder="Estado">
+                        </div>
+                        <div class="mb=3">
+                            <!-- <button routerLink="/alumno" class="btn btn-secondary btn-lg float-start">ATRAS</button> -->
+                            <button type="submit" [disabled]="reservaForm.invalid" class="btn btn-success btn-lg float-end">ACEPTAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>

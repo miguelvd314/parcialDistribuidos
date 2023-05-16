@@ -1,0 +1,24 @@
+{
+  "name": "parcial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/animations": "^16.0.1",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jquery": "^3.7.0",
+    "mongoose": "^7.1.1",
+    "ngx-toastr": "^17.0.2",
+    "nodemon": "^2.0.22",
+    "popper.js": "^1.16.1"
+  }
+}
